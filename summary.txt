@@ -1,0 +1,11 @@
+Summary: AWS vs Azure Cost Comparison
+
+This project evaluated the financial implications of hosting a small web application on Amazon Web Services (AWS) and Microsoft Azure. The analysis focused on core cost drivers—compute, storage, and networking—while also considering licensing benefits and discount mechanisms.
+
+For the baseline scenario, we defined a lightweight web application requiring 2 vCPUs, 4 GB RAM, 50 GB of storage, and approximately 200 GB of monthly data transfer. Using the AWS Pricing Calculator, the estimated monthly cost for Linux-based EC2 instances and S3 storage was competitive, especially when paired with AWS Savings Plans for predictable workloads. Azure’s Pricing Calculator produced similar results for Linux-based Virtual Machines and Blob Storage, but the Windows-based scenario with Azure Hybrid Benefit demonstrated significant savings for enterprises already invested in Microsoft licensing.
+
+Networking costs revealed subtle differences. AWS charges for inter-zone traffic, which can add up in multi-AZ architectures. Azure’s outbound data transfer fees were slightly higher in some regions, but the platform’s integration with Microsoft services can offset these costs for enterprises with existing commitments.
+
+Discount mechanisms play a critical role in long-term sustainability. AWS Savings Plans and Reserved Instances provide flexibility and cost reductions for steady workloads. Azure’s Reserved Instances, combined with Hybrid Benefit, are particularly advantageous for organizations running Windows Server or SQL Server.
+
+In conclusion, the choice of provider depends heavily on business context. For a Linux-based startup prioritizing simplicity and scalability, AWS offers a cost-effective and flexible model. For a Microsoft-centric enterprise leveraging existing Windows licenses, Azure provides clear financial advantages through Hybrid Benefit and seamless integration with the broader Microsoft ecosystem. Both platforms reward careful architectural planning and commitment-based discounts, making cost optimization a key strategy for sustainable cloud adoption.
